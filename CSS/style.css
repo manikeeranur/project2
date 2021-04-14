@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --skyblue: #03baca;
+  --darkslategray: #4b4b4b;
+  --black: #000000;
+  --white: #ffffff;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+.navbar {
+  background-color: var(--darkslategray);
+}
+.navbar .navbar-brand h4 {
+  font-family: sans-serif;
+  font-weight: 700;
+  color: var(--skyblue);
+}
+.fz-1 {
+  font-size: 13px;
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.692),
+      rgba(0, 0, 0, 0.675),
+      rgba(0, 0, 0, 0.682)
+    ),
+    url(../images/home-bg-slideshow1.jpg);
+  animation: bannerchange 10s infinite;
+}
+@keyframes bannerchange {
+  0% {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.692),
+        rgba(0, 0, 0, 0.675),
+        rgba(0, 0, 0, 0.682)
+      ),
+      url(../images/home-bg-slideshow1.jpg);
+  }
+  100% {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.692),
+        rgba(0, 0, 0, 0.675),
+        rgba(0, 0, 0, 0.682)
+      ),
+      url(../images/home-bg-slideshow2.jpg);
+  }
+}
+.heading h1 {
+  color: var(--skyblue);
+  text-shadow: 2px 2px 2px var(--black);
+}
+.heading h3 {
+  font-family: serif;
+}
+.work-box:hover {
+  box-shadow: 1px 1px 2px var(--darkslategray);
+  border-radius: 5px;
+}
+.work-box p,
+.work-box i {
+  color: var(--darkslategray);
+}
+.work-box h3 {
+  color: white;
+  text-shadow: 2px 2px 5px var(--darkslategray);
+}
+.about {
+  background-color: var(--black);
+}
+.about-content ul li a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: var(--white);
+}
+.team-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-box .team-content {
+  width: 90%;
+  height: 100%;
+  color: var(--white);
+  font-weight: bold;
+  position: absolute;
+  background-color: rgba(128, 128, 128, 0.808);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.team-content i {
+  margin: 10px;
+  font-size: 1.2rem;
+}
+.team-content h5 {
+  color: var(--skyblue);
+}
+.team-box:hover .team-content {
+  z-index: 1;
+}
