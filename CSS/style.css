@@ -8,6 +8,7 @@
   --darkslategray: #4b4b4b;
   --black: #000000;
   --white: #ffffff;
+  --whitesmoke: #f6f6f6;
 }
 html,
 body {
@@ -23,6 +24,10 @@ body {
 }
 .fz-1 {
   font-size: 13px;
+}
+
+.outline-none {
+  outline: none;
 }
 .banner {
   width: 100%;
@@ -111,4 +116,10 @@ body {
 }
 .team-box:hover .team-content {
   z-index: 1;
+}
+.portfolio {
+  background-color: var(--whitesmoke);
+}
+.portfolio button {
+  width: 100px;
 }

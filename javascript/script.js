@@ -15,9 +15,9 @@ function viewdesign() {
   designBox.style.cssText = "display:block";
   mobileBox.style.cssText = "display:none";
   socialBox.style.cssText = "display:none";
-  designLink.style.color = "skyblue";
-  mobileLink.style.color = "white";
-  socialLink.style.color = "white";
+  designLink.style.backgroundColor = "skyblue";
+  mobileLink.style.backgroundColor = "white";
+  socialLink.style.backgroundColor = "white";
 }
 
 mobileLink.addEventListener("click", viewmobile);
@@ -26,9 +26,9 @@ function viewmobile() {
   designBox.style.cssText = "display:none";
   mobileBox.style.cssText = "display:block";
   socialBox.style.cssText = "display:none";
-  designLink.style.color = "white";
-  mobileLink.style.color = "skyblue";
-  socialLink.style.color = "white";
+  designLink.style.backgroundColor = "white";
+  mobileLink.style.backgroundColor = "skyblue";
+  socialLink.style.backgroundColor = "white";
 }
 
 socialLink.addEventListener("click", viewsocial);
@@ -37,7 +37,7 @@ function viewsocial() {
   designBox.style.cssText = "display:none";
   mobileBox.style.cssText = "display:none";
   socialBox.style.cssText = "display:block";
-  designLink.style.color = "white";
-  mobileLink.style.color = "white";
-  socialLink.style.color = "skyblue";
+  designLink.style.backgroundColor = "white";
+  mobileLink.style.backgroundColor = "white";
+  socialLink.style.backgroundColor = "skyblue";
 }
