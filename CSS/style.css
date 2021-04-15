@@ -89,6 +89,12 @@ body {
   text-decoration: none;
   color: var(--white);
 }
+.design-link {
+  background-color: var(--skyblue);
+}
+.about button {
+  color: var(--black);
+}
 .team-box {
   position: relative;
   overflow: hidden;
@@ -122,4 +128,54 @@ body {
 }
 .portfolio button {
   width: 100px;
+}
+.all {
+  display: flex;
+}
+.all img {
+  animation: portfolio 2s;
+}
+.html,
+.photoshop,
+.wordpress,
+.mobilephone {
+  display: none;
+}
+.html img,
+.photoshop img,
+.wordpress img,
+.mobilephone img {
+  animation: portfolio 2s;
+}
+@keyframes portfolio {
+  0% {
+    transform: translateX(-1200px) scale(0.3) rotateZ(180deg);
+  }
+  50% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+.html img:hover,
+.photoshop img:hover,
+.wordpress img:hover,
+.mobilephone img:hover {
+  opacity: 0.5;
+}
+/* .portfolio button:focus {
+  background-color: var(--darkslategray);
+  color: white;
+} */
+.pricing-content i {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px double var(--whitesmoke);
+  box-shadow: 2px 2px 2px var(--darkslategray);
+  line-height: 100px;
+  text-align: center;
+  font-size: 3rem;
+  margin: 10px auto;
 }

@@ -41,3 +41,90 @@ function viewsocial() {
   mobileLink.style.backgroundColor = "white";
   socialLink.style.backgroundColor = "skyblue";
 }
+// ....portfolio...
+let allbutton = document.querySelector(".all-btn");
+let htmlbutton = document.querySelector(".html-btn");
+let photoshopbutton = document.querySelector(".photoshop-btn");
+let wordpressbutton = document.querySelector(".wordpress-btn");
+let mobilephonebutton = document.querySelector(".mobilephone-btn");
+
+let all = document.querySelector(".all");
+let html = document.querySelector(".html");
+let photoshop = document.querySelector(".photoshop");
+let wordpress = document.querySelector(".wordpress");
+let mobilephone = document.querySelector(".mobilephone");
+
+allbutton.addEventListener("click", viewall);
+function viewall(e) {
+  all.style.cssText = "display:flex";
+  html.style.cssText = "display:none";
+  photoshop.style.cssText = "display:none";
+  wordpress.style.cssText = "display:none";
+  mobilephone.style.cssText = "display:none";
+
+  allbutton.style.cssText = "background-color:grey;color:white";
+  htmlbutton.style.cssText = "background-color:none";
+  photoshopbutton.style.cssText = "background-color:none";
+  wordpressbutton.style.cssText = "background-color:none";
+  mobilephonebutton.style.cssText = "background-color:none";
+}
+
+htmlbutton.addEventListener("click", viewhtml);
+function viewhtml() {
+  all.style.cssText = "display:none";
+  html.style.cssText = "display:flex";
+  photoshop.style.cssText = "display:none";
+  wordpress.style.cssText = "display:none";
+  mobilephone.style.cssText = "display:none";
+
+  allbutton.style.cssText = "background-color:none";
+  htmlbutton.style.cssText = "background-color:grey;color:white";
+  photoshopbutton.style.cssText = "background-color:none";
+  wordpressbutton.style.cssText = "background-color:none";
+  mobilephonebutton.style.cssText = "background-color:none";
+}
+
+photoshopbutton.addEventListener("click", viewphotoshop);
+function viewphotoshop() {
+  all.style.cssText = "display:none";
+  html.style.cssText = "display:none";
+  photoshop.style.cssText = "display:flex";
+  wordpress.style.cssText = "display:none";
+  mobilephone.style.cssText = "display:none";
+
+  allbutton.style.cssText = "background-color:none";
+  htmlbutton.style.cssText = "background-color:none";
+  photoshopbutton.style.cssText = "background-color:grey;color:white";
+  wordpressbutton.style.cssText = "background-color:none";
+  mobilephonebutton.style.cssText = "background-color:none";
+}
+
+wordpressbutton.addEventListener("click", viewwordpress);
+function viewwordpress() {
+  all.style.cssText = "display:none";
+  html.style.cssText = "display:none";
+  photoshop.style.cssText = "display:none";
+  wordpress.style.cssText = "display:flex";
+  mobilephone.style.cssText = "display:none";
+
+  allbutton.style.cssText = "background-color:none";
+  htmlbutton.style.cssText = "background-color:none";
+  photoshopbutton.style.cssText = "background-color:none";
+  wordpressbutton.style.cssText = "background-color:grey;color:white";
+  mobilephonebutton.style.cssText = "background-color:none";
+}
+
+mobilephonebutton.addEventListener("click", viewmobilephone);
+function viewmobilephone() {
+  all.style.cssText = "display:none";
+  html.style.cssText = "display:none";
+  photoshop.style.cssText = "display:none";
+  wordpress.style.cssText = "display:none";
+  mobilephone.style.cssText = "display:flex";
+
+  allbutton.style.cssText = "background-color:none";
+  htmlbutton.style.cssText = "background-color:none";
+  photoshopbutton.style.cssText = "background-color:none";
+  wordpressbutton.style.cssText = "background-color:none";
+  mobilephonebutton.style.cssText = "background-color:grey;color:white";
+}
