@@ -16,8 +16,8 @@ function viewdesign() {
   mobileBox.style.cssText = "display:none";
   socialBox.style.cssText = "display:none";
   designLink.style.backgroundColor = "skyblue";
-  mobileLink.style.backgroundColor = "white";
-  socialLink.style.backgroundColor = "white";
+  mobileLink.style.backgroundColor = "grey";
+  socialLink.style.backgroundColor = "grey";
 }
 
 mobileLink.addEventListener("click", viewmobile);
@@ -26,9 +26,9 @@ function viewmobile() {
   designBox.style.cssText = "display:none";
   mobileBox.style.cssText = "display:block";
   socialBox.style.cssText = "display:none";
-  designLink.style.backgroundColor = "white";
+  designLink.style.backgroundColor = "grey";
   mobileLink.style.backgroundColor = "skyblue";
-  socialLink.style.backgroundColor = "white";
+  socialLink.style.backgroundColor = "grey";
 }
 
 socialLink.addEventListener("click", viewsocial);
@@ -37,8 +37,8 @@ function viewsocial() {
   designBox.style.cssText = "display:none";
   mobileBox.style.cssText = "display:none";
   socialBox.style.cssText = "display:block";
-  designLink.style.backgroundColor = "white";
-  mobileLink.style.backgroundColor = "white";
+  designLink.style.backgroundColor = "grey";
+  mobileLink.style.backgroundColor = "grey";
   socialLink.style.backgroundColor = "skyblue";
 }
 // ....portfolio...
